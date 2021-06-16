@@ -5,7 +5,8 @@ html {
 body {
   background: #fff;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.15;
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -36,18 +37,21 @@ pre.highlight {
   position: relative;
 }
 pre.highlight code {
+  max-height: 79vh;
+  overflow-x: scroll;
+  /* overflow-x: auto; */
   background: #f5f5f5;
   -webkit-box-shadow: 0 0 0 1px #e1e1e1;
   box-shadow: 0 0 0 1px #e1e1e1;
   display: block;
-  overflow-x: auto;
   padding: 0.75rem;
   border-radius: 4px;
 }
 
 .content {
   padding-top: 1em;
-  max-width: 50rem;
+  max-width: 76vw;
+  /* max-width: 50rem; */
   margin: 0 auto;
 }
 
@@ -172,5 +176,6 @@ pre.highlight code {
   -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.2s ease-out;
   transition: opacity 0.1s ease-out, -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.1s ease-out;
-  transition: transform 0.2s ease-out, opacity 0.1s ease-out, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.1s ease-out,
+    -webkit-transform 0.2s ease-out;
 }
