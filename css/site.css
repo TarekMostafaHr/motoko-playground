@@ -137,7 +137,8 @@ pre.highlight code {
   text-align: center;
 }
 .run-button {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   z-index: 1;
   right: 3px;
   top: 8px;
